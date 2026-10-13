@@ -3,7 +3,7 @@ import mongoose,{Schema,Document} from "mongoose";
 import { unique } from "next/dist/build/utils";
 
 export interface Message extends Document {
-    content : String,
+    content : string,
     created_at: Date
 }
 
@@ -22,10 +22,10 @@ const messageSchema : Schema<Message> = new Schema({
 })
 
 export interface User extends Document {
-    username:String,
-    email:String,
-    password:String,
-    verfiyCode:String,
+    username:string,
+    email:string,
+    password:string,
+    verfiyCode:string,
     verfiyCodeExpiry:Date,
     isVerfied:Boolean,
     isAcceptingMessage:Boolean,
