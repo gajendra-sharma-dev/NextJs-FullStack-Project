@@ -1,5 +1,5 @@
 import conntedDB from "@/lib/dbConntect";
-import bcrypt from "bcrypt"
+import bcrypt from "bcryptjs"
 import {sendEmailVerfiaction} from "../../../helper/sendEmailVerfication"
 import userModel from "@/model/User.models";
 import { json, success } from "zod";
